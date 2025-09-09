@@ -1,0 +1,58 @@
+/* #id1 {
+    color: red
+}
+
+#id2 {
+    color: blue
+}
+
+#id3 {
+    color: yellow
+}
+
+#id4 {
+    color: green
+}
+
+#id5 {
+    color: cyan
+}
+
+
+.buttons {
+    background-color: black;
+}
+
+#button {
+    color: blue
+}
+
+.buttons1 {
+    color: red
+} */
+
+
+#id1 {
+    background-color: rgb(255, 255, 0);
+    color: rgb(255, 0, 0)
+}
+
+#id2 {
+    background-color: rgb(255, 255, 0);
+    color: rgb(255, 0, 0)
+}
+
+#id3 {
+    background-color: rgb(255, 255, 0);
+    color: rgb(255, 0, 0)
+}
+
+#id4 {
+    background-color: rgb(255, 255, 0);
+    color: rgb(255, 0, 0)
+}
+
+#id5 {
+    background-color: rgb(255, 255, 0);
+    color: rgb(255, 0, 0)
+}

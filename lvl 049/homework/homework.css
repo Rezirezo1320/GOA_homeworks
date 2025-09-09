@@ -1,0 +1,48 @@
+#button1:hover{
+    background-color: green;
+}
+
+#link:hover{
+    color:#000000;
+}
+
+#image:hover{
+    transform: scale(1.25);
+}
+
+#p-styling{
+    color: fuchsia;
+    font-size: 50px;
+    transition: color 4s;
+}
+#p-styling:hover{
+    color: black;
+}
+
+#div1{
+    border: 30px solid red;
+    transition: border-width 0.5s;
+}
+#div1:hover{
+    border-width: 50px;
+}
+
+#button2:active{
+    transform: scale(0.5);
+}
+
+#div3{
+    border: 30px solid navy;
+    padding: 10px;
+    transition: padding 4s;
+}
+#div3:hover{
+    padding: 25px;
+}
+
+#div4{
+    border: 60px solid rgb(6, 128, 0);
+}
+#div4:hover{
+    transform: rotate(45deg);
+}

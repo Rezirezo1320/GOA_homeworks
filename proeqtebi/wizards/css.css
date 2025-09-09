@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("https://www.skyweaver.net/images/media/wallpapers/wallpaper1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  opacity: 0.9;
+  width: 420px;
+  background-color: transparent;
+  border: 2px solid #2E0071 ;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 10px #0c1704;
+  color: #000;
+  border-radius: 10px;
+  padding: 30px 40px;
+  background-color: #704cb9;
+}
+
+.wrapper h1 {
+  color: #bcc135;
+}
+
+.wrapper h1:hover {
+  animation: yellow1 1s linear infinite;
+  text-shadow: 0 0 5px #bcc135, 0 0 10px #bcc135, 0 0 20px #d1d720;
+}
+
+.center-wrapper {
+  text-align: center;
+}
+
+.wrap {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+/* @keyframes yellow1{
+  from {
+    text-shadow: 0 0 5px #bcc135, 0 0 10px #bcc135, 0 0 20px #bcc135;
+  }
+
+  to {
+    text-shadow: 0 0 15px #d1d720, 0 0 20px #d1d720, 0 0 30px #d1d720;
+  }
+} */
+
+.wrapper .input-box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin: 30px 0;
+}
+
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid #bcc135 ;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #bcc135;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #bcc135
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: -15px 0 15px;
+  color: #bcc135;
+}
+
+.remember-forgot label input {
+  accent-color: #bcc135 ;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #bcc135 ;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 5px #bcc135, 0 0 10px #bcc135, 0 0 20px #d1d720;
+}
+
+.remember-forgot label:hover {
+  text-shadow: 0 0 5px #bcc135, 0 0 10px #bcc135, 0 0 20px #d1d720;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #2E0071 ;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px #0c1704 ;
+  cursor: pointer;
+  font-size: 16px;
+  color: #bcc135 ;
+  font-weight: 600;
+}
+
+.wrapper .register-link {
+  text-align: center;
+  font-size: 14px;
+  margin: 20px 15px;
+}
+
+.wrapper .register-link p a {
+  color: #bcc135 ;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.wrapper .register-link p {
+  color: #2E0071;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.wrapper .register-link p a:hover {
+  text-shadow: 0 0 5px #bcc135, 0 0 10px #bcc135, 0 0 20px #d1d720;
+}
+
+#loginn {
+  color: #bcc135;
+  text-decoration: none;
+}
+

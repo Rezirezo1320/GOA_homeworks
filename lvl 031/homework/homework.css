@@ -1,0 +1,25 @@
+#id1 {
+    color: rgb(255, 200, 57)
+}
+
+#id2 {
+    color: #8fda
+}
+
+#id3 {
+    height: 1000px;
+    width: 1000px;
+    background-color: green;
+}
+
+#id4 {
+    background-color: black;
+    width: 20%;
+    height: 15%;
+}
+
+.divs {
+    height: 150px;
+    width: 120px;
+    color: purple;
+}

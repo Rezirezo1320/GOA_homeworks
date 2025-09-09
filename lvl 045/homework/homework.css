@@ -1,0 +1,58 @@
+/* 3 */
+.container{
+    display: flex;
+    flex-direction: row;
+}
+/* 4 */
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 5 */
+.container3{
+    display: flex;
+    justify-content: space-between;
+}
+/* 6 */
+.container4{
+    display: flex;
+}
+.header-content{
+    flex-grow: 1;
+}
+#menu4{
+    flex-grow: 2;
+}
+/* 7 */
+.container5{
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* 8 */
+.container6{
+    display: flex;
+
+}
+#menu6{
+    align-self: flex-end;
+}
+.header-content2{
+    align-self: flex-start;
+}
+/* 9 */
+.container7{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 10 */
+.container8{
+    display: flex;
+    flex-direction: row;
+}
+
+.conatiner9{
+    display: flex;
+    flex-direction: column;
+}
+/* 11 */

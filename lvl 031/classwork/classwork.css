@@ -1,0 +1,27 @@
+#id1 {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+#id2 {
+    color: #B92828;
+    background-color: #283958;
+}
+
+#id3 {
+    color: #285835;
+    background-color: #584B28;
+}
+
+.parent-div {
+    width: 70%;
+    height: 600px;
+    background-color: #3498db;
+    margin: 0 auto;
+}
+
+.child-div {
+    width: 25%;
+    height: 10%; 
+    background-color: #e74c3c; 
+}

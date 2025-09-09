@@ -1,0 +1,36 @@
+p {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-decoration: overline;
+}
+
+span {
+    text-decoration: line-through;
+}
+
+h2 {
+    text-decoration: overline underline;
+}
+
+.a {
+    text-decoration: dashed underline;
+}
+
+.warning {
+    text-decoration: underline wavy
+}
+
+nav ul li a {
+    text-transform: uppercase;
+}
+
+h3 {
+    text-shadow: 10px 5px;
+    font-weight: bold;
+}

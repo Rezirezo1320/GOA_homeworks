@@ -1,0 +1,279 @@
+body {
+    background-image: url("https://images5.alphacoders.com/138/1383817.webp");
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-top {
+    background-color: #e90909;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-logo img.nintendo-logo {
+    height: 60px;
+    width: 150px;
+}
+
+.nav-login {
+    display: flex;
+    align-items: center;
+}
+
+.nav-login .login-icon {
+    width: 20px;
+    height: 20px;
+    background: url('user-icon.png') no-repeat center;
+    margin-right: 8px;
+}
+
+.nav-login .login-text {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.nav-bottom {
+    background-color: #1C2526;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+    background-size: 20px 20px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 15px;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    transform: scale(1.1);
+    border: 2px solid #FF0000;
+    color: #FF0000;
+}
+
+.reduced-motion {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reduced-motion label {
+    margin-right: 8px;
+}
+
+.nav-switch img.switch-logo {
+    height: 40px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#nintendo {
+    width: 700px;
+    position: absolute;
+    top: 200px;
+    animation: coin 1s ease-out forwards;
+}
+
+@keyframes coin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#mario {
+    position: absolute;
+    left: 700px;
+    top: 160px;
+    animation: moveUp 1s ease-out forwards;
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#paragraph {
+    color: white;
+    max-width: 33%;
+    position: absolute;
+    left: 200px;
+    font-size: 180px;
+    top: 260px;
+}
+
+#p {
+    color: white;
+    max-width: 28%;
+    position: absolute;
+    left: 200px;
+    font-size: 50px;
+    top: 360px;
+}
+
+#text {
+    color: white;
+    max-width: 33%;
+    position: absolute;
+    left: 200px;
+    top: 600px;
+    font-size: 20px;
+}
+
+#button {
+    border-radius: 35%;
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    left: 200px;
+    top: 760px;
+    border-color: white;
+    padding: 20px 4px;
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    bottom: 7px;
+}
+
+@keyframes bgToDark {
+    from {
+        background-color: initial;
+      }
+      to {
+        background-color: #1E1E1E;
+      }
+    }
+
+@keyframes linkToWhite {
+    from {
+        color: #1E1E1E;
+    }
+    to {
+        color: white;
+    }
+}
+
+#div {
+    background-color: white;
+    animation-fill-mode: forwards;
+}
+
+#div:hover #button {
+    animation: bgToDark 0.3s forwards;
+}
+
+#div:hover #link {
+    animation: linkToWhite 0.3s forwards;
+}
+
+
+#animation {
+    animation: appear 1s ease-out forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#coins {
+    width: 700px;
+    position: absolute;
+    top: 860px;
+}
+
+#mariodiv {
+    height: 300px;
+    width: 1000px;
+    background-color: white;
+    position: absolute;
+    top: 1160px;
+    left: 400px;
+    border-radius: 8%;
+}
+
+#marioo {
+    position: relative;
+    top: 25px;
+}
+
+#mario_text {
+    position: absolute;
+    left: 575px;
+    bottom: 175px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#nintendo_info {
+    position: relative;
+    left: 575px;
+    bottom: 150px;
+    max-width: 40%;
+    font-size: 17px;
+}

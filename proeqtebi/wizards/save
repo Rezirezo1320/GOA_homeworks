@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcane Wizards Guild</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="min-h-screen">
+    <nav class="bg-purple-100 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-hat-wizard text-purple-600 text-3xl mr-2"></i>
+                        <span class="title-font text-xl text-purple-800 font-bold">Arcane Wizards Guild</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-purple-900 hover:text-purple-600 px-3 py-2 text-sm font-medium transition">Home</a>
+                    <a href="#about" class="text-purple-900 hover:text-purple-600 px-3 py-2 text-sm font-medium transition">About Magic</a>
+                    <a href="#schools" class="text-purple-900 hover:text-purple-600 px-3 py-2 text-sm font-medium transition">Magic Schools</a>
+                    <a href="#contact" class="text-purple-900 hover:text-purple-600 px-3 py-2 text-sm font-medium transition">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-purple-900 hover:text-purple-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <section id="home" class="relative overflow-hidden magic-bg py-20 md:py-32">
+        <div class="orb-effect absolute inset-0"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="title-font text-4xl md:text-6xl font-bold text-purple-900 mb-6">Unlock the <span class="text-amber-300">Secrets</span> of <span class="text-cyan-400">Magic</span></h1>
+                <p class="text-lg md:text-xl text-purple-800 max-w-3xl mx-auto mb-10">Join our ancient guild of wizards and discover the arcane arts that shape reality itself.</p>
+                <div class="flex justify-center gap-4">
+                    <a href="#about" class="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full shadow-lg transition transform hover:scale-105">Learn Magic</a>
+                    <a href="#contact" class="px-8 py-3 bg-amber-300 hover:bg-amber-400 text-purple-900 font-semibold rounded-full shadow-lg transition transform hover:scale-105">Join Guild</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Magic Section -->
+    <section id="about" class="py-16 bg-gradient-to-b from-purple-50 to-cyan-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-purple-800">The <span class="text-cyan-500">Arcane Arts</span></h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-purple-400 to-amber-300 mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="spell-card p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-book-sparkles text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="title-font text-xl text-purple-800">The Origins of Magic</h3>
+                    </div>
+                    <p class="text-purple-900">Magic has existed since the dawn of time, woven into the very fabric of reality by the first Primordial Wizards. Our guild preserves these ancient traditions, teaching apprentices how to tap into the fundamental forces that shape existence.</p>
+                </div>
+                
+                <div class="spell-card p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-amber-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-wand-sparkles text-amber-600 text-xl"></i>
+                        </div>
+                        <h3 class="title-font text-xl text-purple-800">Wandcraft & Spellcasting</h3>
+                    </div>
+                    <p class="text-purple-900">Mastering the use of a wand is the first step in any wizard's journey. From simple charms to complex transfigurations, proper wand technique is essential for channeling magical energy effectively.</p>
+                </div>
+                
+                <div class="spell-card p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-cyan-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-cauldron text-cyan-600 text-xl"></i>
+                        </div>
+                        <h3 class="title-font text-xl text-purple-800">Potioncraft</h3>
+                    </div>
+                    <p class="text-purple-900">The subtle art of potion-making combines magical ingredients with precisely timed incantations. Our guild maintains one of the most extensive potion ingredient libraries in the known realms.</p>
+                </div>
+                
+                <div class="spell-card p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-eye text-purple-600 text-xl"></i>
+</body>
+</html>
+
+
+
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.page-body {
+  min-height: 100vh;
+}
+
+.nav-bar {
+  background-color: #f3e8ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 4rem;
+  gap: 2rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  color: #a855f7;
+  font-size: 1.75rem;
+  margin-right: 0.5rem;
+}
+
+.font-title {
+  font-family: 'Cinzel Decorative', 'Georgia', serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #6b21a8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #4c1d95;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 0.375rem;
+}
+
+.nav-link:hover {
+  background-color: #e9d5ff;
+  color: #7e22ce;
+}
+
+.nav-toggle {
+  display: none;
+  align-items: center;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  color: #4c1d95;
+}
+
+.hero {
+  position: relative;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.bg-magic {
+  background: linear-gradient(to right, #f3e8ff, #e0f7fa);
+  overflow: hidden;
+}
+
+.effect-orb::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent 70%);
+  animation: floatOrbs 10s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes floatOrbs {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(10%, 10%) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  color: #6b21a8;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.highlight-amber {
+  color: #fbbf24;
+}
+
+.highlight-cyan {
+  color: #22d3ee;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #5b21b6;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #9333ea;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #7e22ce;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #fbbf24;
+  color: #6b21a8;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #fcd34d;
+  transform: scale(1.05);
+}
+
+.section-gradient {
+  background: linear-gradient(to bottom, #faf5ff, #ecfeff);
+  padding: 4rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #6b21a8;
+  font-weight: 700;
+}
+
+.section-divider {
+  width: 6rem;
+  height: 0.25rem;
+  background: linear-gradient(to right, #c084fc, #facc15);
+  margin: 1rem auto 0;
+  border-radius: 9999px;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-spell {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-spell:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(100, 0, 200, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon-wrapper {
+  padding: 0.75rem;
+  border-radius: 9999px;
+  margin-right: 1rem;
+}
+
+.icon-wrapper.purple {
+  background-color: #ede9fe;
+}
+
+.icon-wrapper.amber {
+  background-color: #fef3c7;
+}
+
+.icon-wrapper.cyan {
+  background-color: #cffafe;
+}
+
+.icon.purple {
+  color: #9333ea;
+  font-size: 1.25rem;
+}
+
+.icon.amber {
+  color: #f59e0b;
+  font-size: 1.25rem;
+}
+
+.icon.cyan {
+  color: #06b6d4;
+  font-size: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #6b21a8;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #4c1d95;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Extended card text for better layout fill */
+.card-text::after {
+  content: " \A\A Arcane power flows through the hands of the gifted. Wizards must train daily to harness such forces. Each spell has its own personality and needs to be respected as a living art. There are tomes yet to be discovered, and the depth of magical lore is as vast as the stars.";
+  white-space: pre-line;
+}

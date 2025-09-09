@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-top {
+    background-color: #e90909;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-logo img.nintendo-logo {
+    height: 60px;
+    width: 150px;
+}
+
+.nav-login {
+    display: flex;
+    align-items: center;
+}
+
+.nav-login .login-icon {
+    width: 20px;
+    height: 20px;
+    background: url('user-icon.png') no-repeat center;
+    margin-right: 8px;
+}
+
+.nav-login .login-text {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.nav-bottom {
+    background-color: #1C2526;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+    background-size: 20px 20px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 15px;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a.active {
+    border: 2px solid white;
+}
+
+.nav-links a:hover {
+    transform: scale(1.1);
+    border: 2px solid #FF0000;
+    color: #FF0000;
+}
+
+.reduced-motion {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reduced-motion label {
+    margin-right: 8px;
+}
+
+.nav-switch img.switch-logo {
+    height: 40px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-section {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/207/511/723/mario-super-mario-maker-wallpaper-preview.jpg);
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-content {
+    text-align: left;
+}
+.main-content h1 {
+    font-size: 48px;
+    color: #ff1111;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 18px;
+    color: #CC6600;
+    margin-bottom: 20px;
+}
+
+.browse-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.browse-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Mario through the years section */
+.mario-through-years {
+    background-color: #e60012; /* Nintendo red */
+    color: #fff; /* White text */
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Background pattern */
+  .mario-through-years::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('mario-pattern.png') repeat; /* Replace with your pattern image */
+    opacity: 0.1; /* Subtle overlay */
+    z-index: 0;
+  }
+  
+  .mario-through-years .content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Heading */
+  .mario-through-years h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif; /* Adjust font if needed */
+  }
+  
+  /* Paragraph */
+  .mario-through-years p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Video preview container */
+  .video-preview {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #000; /* Black background */
+    padding: 10px;
+    border-radius: 10px;
+    /* Dotted texture background */
+    background-image: radial-gradient(circle, #333 1px, transparent 1px);
+    background-size: 5px 5px;
+  }
+  
+  /* Player icon (P1) */
+  .player-icon {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .player-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: #fff;
+    margin-right: 8px;
+  }
+  
+  .player-icon span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  /* Video element */
+  .preview-video {
+    width: 780px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  /* Play button overlay */
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: #1a73e8; /* Google blue for the play button */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Play button triangle */
+  .play-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 30px solid #fff; /* White triangle */
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  
+  /* Hide play button when video is playing */
+  .play-button.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #ffb107;
+    width: 80%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    animation: popupAnim 0.5s ease forwards;
+}
+
+@keyframes popupAnim {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.popup-content h2 {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.character-card {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}

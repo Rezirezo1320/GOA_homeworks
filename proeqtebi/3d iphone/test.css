@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+    background-image: url("black wallpaper.png");
+    background-color: #1e1e1e;
+    font-family: 'Red Hat Text', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 0 15px #a324f3;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin: 0;
+    padding: 0 0 0 1800px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #eaf4fa;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: #a324f3;
+}
+
+#iphone {
+    position: absolute;
+    left: 1800px;
+    top: 400px;
+    width: 400px;
+    height: 800px;
+}
+
+#head {
+    color: #eaf4fa;
+    font-size: 60px;
+    position: absolute;
+    left: 450px;
+    top: 80px;
+    text-shadow: 0 0 10px #a324f3;
+    animation: appear 1s linear;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#info {
+    color: #eaf4fa;
+    text-shadow: 0 0 10px #a324f3;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    max-width: 50%;
+    font-size: 25px;
+    line-height: 1.6;
+    animation: appear2 1s linear;
+}
+
+@keyframes appear2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#contact {
+    position: absolute;
+    top: 1200px;
+    left: 150px;
+    color: #eaf4fa;
+    font-size: 20px;
+    max-width: 50%;
+    text-shadow: 0 0 8px #a324f3;
+}
+
+#contact a {
+    color: #a324f3;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}

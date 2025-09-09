@@ -1,0 +1,17 @@
+#div {
+    background-color: blue;
+    border-radius: 50%;
+    width:400px;
+    height: 400px;
+    animation: appear 5s linear 2s infinite
+}
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Login Page of Super Mario</title>
+        <!-- Link to js and css -->
+        <link rel="stylesheet" href="Characters.css">
+        <link rel="stylesheet" href="Characters.js">
+        <link rel="shortcut icon" href="marioo.jpg">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <div class="nav-top">
+                <div class="nav-logo">
+                    <img src="data:image/png;base64,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" alt="Nintendo Logo" class="nintendo-logo">
+                </div>
+                <div class="nav-login">
+                    <span class="login-icon"></span>
+                    <a href="LogIn.html" class="login-text">Log in / Sign up</a>
+                </div>
+            </div>
+            <nav class="nav-bottom">
+                <!-- Links -->
+                <ul class="nav-links">
+                    <li><a href="MainPage.html" class="active">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="mariohistory.html">Mario history</a></li>
+                    <li><a href="Characters.html">Characters</a></li>
+                </ul>
+                <div class="nav-switch">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Nintendo_Switch_logo.svg/2048px-Nintendo_Switch_logo.svg.png" alt="Nintendo Switch Logo" class="switch-logo">
+                </div>
+            </nav>
+        </header>
+    
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="main-content">
+            <h1>Characters</h1>
+            <p>From ravishing royalty to menacing monsters, the Mushroom Kingdom has had its share of memorable characters over the years...</p>
+            <button class="browse-btn" onclick="openPopup()">Browse</button>
+        </div>
+    </section>
+
+    <section class="mario-through-years">
+        <div class="content">
+        <h2>Mario through the years</h2>
+        <p>Speedrun through gaming history in this video rewind of some of Mario's greatest hits.</p>
+        <div class="video-preview">
+            <div class="player-icon">
+            <!-- <img src="https://i.pinimg.com/736x/4c/33/42/4c334214f0a9ea49c2468a23ff5596c0.jpg" alt="Mario P1 Icon">
+            <span>P1</span> -->
+            </div>
+            <!-- <video class="preview-video" poster="https://rukminim2.flixcart.com/image/850/1000/l0y6qa80/poster/o/q/q/medium-super-mario-galaxy-4-wallpaper-super-mario-games-poster-original-imagcmz3qmejgaxw.jpeg?q=20&crop=false" controls autoplay> -->
+                <iframe  class="preview-video" width="853" height="880" src="https://www.youtube.com/embed/beOBf5YcSQw" title="Evolution of Super Mario Bros. Games [1985-2023]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- </video> -->
+            <!-- <div class="play-button"></div> -->
+        </div>
+        </div>
+    </section>
+
+    <!-- Pop-up -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">×</span>
+            <h2>Characters</h2>
+            <div class="carousel">
+                <div class="character-card" style="background-image: url(https://play.mob.ge/img.php?id=2019/04/Super-Mario-Run-Icon-2.png);"></div>
+                <div class="character-card" style="background-image: url(https://jamstones.sg/cdn/shop/files/9585EB3A-3047-4ACF-83F1-56F54EB07F5D.jpg?v=1693832915&width=1445);"></div>
+                <div class="character-card" style="background-image: url(https://tiermaker.com/images/chart/chart/super-mario-characters-142417/square2png.png);"></div>
+                <div class="character-card" style="background-image: url(https://tiermaker.com/images/chart/chart/super-mario-characters-142417/square5png.png);"></div>
+                <div class="character-card" style="background-image: url(https://p.turbosquid.com/ts-thumb/bI/EYcweP/YI/ts/jpg/1696416556/300x300/sharp_fit_q85/32e99168aee67e58906d0838abd4a99a86b7d3b3/ts.jpg);"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

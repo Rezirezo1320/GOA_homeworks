@@ -1,0 +1,134 @@
+body {
+    background-color: #D80216;
+}
+
+#nintendo {
+    position: absolute;
+    left: 30px;
+}
+
+
+#mario {
+    position: absolute;
+    left: 700px;
+    animation: moveUp 1s ease-out forwards;
+}
+
+@keyframes moveUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+#paragraph {
+    color: white;
+    max-width: 33%;
+    position: absolute;
+    left: 200px;
+    font-size: 180px;
+}
+
+#p {
+    color: white;
+    max-width: 28%;
+    position: absolute;
+    left: 200px;
+    font-size: 50px;
+    top: 200px;
+}
+
+#text {
+    color: white;
+    max-width: 33%;
+    position: absolute;
+    left: 200px;
+    top: 440px;
+    font-size: 20px;
+}
+
+
+#button {
+    border-radius: 15%;
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    left: 200px;
+    top: 600px;
+    border-color: white;
+
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#button:hover {
+    background-color: #404040;
+}
+
+#link:hover {
+    color: white;
+}
+
+#animation {
+    animation: appear 1s ease-out forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+#coins {
+    position: absolute;
+    top: 700px;
+}
+
+
+#mariodiv {
+    height: 300px;
+    width: 1000px;
+    background-color: white;
+    position: absolute;
+    left: 250px;
+    top: 1000px;
+    border-radius: 2%;
+}
+
+#marioo {
+    position: relative;
+    top: 25px
+}
+
+
+#mario_text {
+    position: absolute;
+    left: 575px;
+    bottom: 175px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#nintendo_info {
+    position: relative;
+    left: 575px;
+    bottom: 150px;
+    max-width: 40%;
+    font-size: 17px;
+
+}

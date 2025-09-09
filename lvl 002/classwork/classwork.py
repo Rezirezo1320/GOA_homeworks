@@ -1,0 +1,1 @@
+print ("cotne gagnidze 14")

@@ -1,0 +1,44 @@
+#id1 {
+    height: 700px;
+    width: 700px;
+    background-color: black;
+}
+
+
+#id2 {
+    height: 50px;
+    width: 50px;
+    background-color:red;
+    position: relative;
+    top: 300px;
+    left: 300px;
+}
+
+#id3 {
+    height: 500px;
+    width: 1000px;
+    border-radius: 30px;
+    border: solid;
+    border-color: orange;
+    background-image: url(layered-waves-haikei.png);
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.red { background-color: red; top: 10%; left: 10%; }
+.green { background-color: green; top: 10%; right: 10%; }
+.blue { background-color: blue; bottom: 10%; left: 10%; }
+.purple { background-color: purple; bottom: 10%; right: 10%; }
+.gray { background-color: gray; top: 50%; left: 50%; transform: translate(-50%, -50%); }

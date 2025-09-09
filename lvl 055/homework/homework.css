@@ -1,0 +1,288 @@
+/* <!-- 🔁 Keyframes & Animation Basics
+Create a simple animation using @keyframes that moves a box from left to right.
+Define an animation using @keyframes that changes the background color from blue to red over 5 seconds.
+Create a CSS animation that rotates an element 360 degrees.
+Design a pulse effect using keyframes where an element scales up and down. --> */
+
+
+#div1 {
+    background: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation: ltr 2s linear infinite;
+}
+
+@keyframes ltr {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(1000px);
+    }
+}
+
+
+#div2 {
+    background: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation: bgc 2s linear infinite;
+}
+
+
+@keyframes bgc {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: black;
+    }
+}
+
+body {
+    background-color: purple;
+}
+
+
+#div3 {
+    background: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    animation: deg 2s linear infinite;
+}
+
+
+@keyframes deg {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+
+#div4 {
+    background: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/* 🔄 animation-iteration-count
+Animate a bouncing ball that repeats exactly 3 times.
+Set up an infinite animation of a loading spinner.
+Create an animation that runs only once and then stops.
+Use a class toggle to switch between an animation that loops and one that doesn't. */
+
+#div5 {
+    background: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    animation: und 2s linear 3;
+}
+
+@keyframes und {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(100px);
+    }
+}
+
+
+#div6 {
+    background: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    animation: deg 2s linear infinite;
+}
+
+
+@keyframes deg {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+
+#div7 {
+    background: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    animation: deg 2s linear 1;
+}
+
+
+@keyframes deg {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+
+#box {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+  
+  .animate-loop {
+    animation: moveBox 2s linear infinite;
+  }
+  
+  .animate-once {
+    animation: moveBox 2s linear forwards;
+  }
+  
+  @keyframes moveBox {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200px);
+    }
+  }
+  
+
+  /* Set an animation to start 2 seconds after the page loads.
+Create a sequence of three elements animating one after another using different animation-delay values.
+Make a fading effect that lasts for exactly 10 seconds. */
+
+
+#div8 {
+    background: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    animation: deg1 2s linear 5s;
+}
+
+
+@keyframes deg1 {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(120deg)
+    }
+}
+
+
+#div9 {
+    background: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    animation: delay 2s linear infinite;
+    position: absolute;
+    left: 700px;
+}
+
+@keyframes delay {
+    from {
+        transform: translateY(0px);
+    }
+    
+    50% {
+        transform: translateY(400px)
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+#div10 {
+    background: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    animation: delay1 2s linear 1s infinite;
+    position: absolute;
+    left: 1000px;
+}
+
+@keyframes delay1 {
+    from {
+        transform: translateY(0px);
+    }
+    
+    50% {
+        transform: translateY(400px)
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+#div11 {
+    background: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    animation: delay2 2s linear 2s infinite;
+    position: absolute;
+    left: 1300px;
+}
+
+@keyframes delay2 {
+    from {
+        transform: translateY(0px);
+    }
+    
+    50% {
+        transform: translateY(400px)
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+#div12 {
+    background: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    animation: fade 10s linear infinite;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+body {
+    background-image: url("blurry-gradient-haikei\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Red Hat Text"
+}
+
+#header {
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    animation: moveUp 1s ease-out forwards;
+}
+
+@keyframes moveUp {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+#human {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: appear 1s ease-out forwards;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+#person {
+    position: absolute;
+    top: 150px;
+    height: 900px;
+    width: auto;
+}
+
+#legs {
+    height: 480px;
+    position: absolute;
+    top: 780px;
+    left: 1060px;
+    width: 175px;
+}
+
+#torso {
+    height: 280px;
+    position: absolute;
+    top: 500px;
+    left: 1050px;
+    width: 180px;
+}
+
+#head {
+    height: 130px;
+    position: absolute;
+    top: 370px;
+    left: 1090px;
+    width: 90px;
+}
+
+#left_arm {
+    height: 400px;
+    position: absolute;
+    top: 510px;
+    left: 970px;
+    width: 100px;
+}
+
+
+#right_arm {
+    height: 400px;
+    position: absolute;
+    top: 510px;
+    left: 1230px;
+    width: 95px;
+}
+
+.body-part {
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: max-content;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 6px;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.body-part:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#sidebar-trigger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100vh;
+    z-index: 999;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #1f1f2e;
+    color: #fff;
+    padding: 25px 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+    transition: left 0.3s ease;
+    font-family: "Roboto Condensed", sans-serif;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+#sidebar-trigger:hover + #sidebar,
+#sidebar:hover {
+    left: 0;
+}
+
+.sidebar-section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #2e2e3f;
+    padding-bottom: 20px;
+}
+
+.sidebar-section:last-child {
+    border-bottom: none;
+}
+
+.sidebar-section h4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.sidebar-item .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.sidebar-item strong {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.sidebar-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+
+.organ-card {
+    position: absolute;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    
+}
+
+.organ-card.left {
+    left: 250px; /* Closer to the person */
+}
+
+.organ-card.right {
+    right: 250px;
+}
+
+.organ-card .card {
+    background-color: #1f1f2e;
+    color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.organ-card #brain {
+    position: absolute;
+    bottom: 25px;
+}
+
+.organ-card #lungs {
+    position: absolute;
+    top: -200px;
+}
+
+
+.organ-card .card img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    border: solid;
+    border-radius: 15%;
+}
+
+.organ-card .card h4 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #fff;
+    border-color: #2e2e3f;
+}
+
+.organ-card .card p {
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+}
+
+.organ-card .line {
+    width: 2px;
+    background-color: white;
+    margin-top: 6px;
+}
+
+a {
+    text-decoration: none;
+}

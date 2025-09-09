@@ -1,0 +1,204 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-top {
+    background-color: #e90909;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-logo img.nintendo-logo {
+    height: 60px;
+    width: 150px;
+}
+
+.nav-login {
+    display: flex;
+    align-items: center;
+}
+
+.nav-login .login-icon {
+    width: 20px;
+    height: 20px;
+    background: url('user-icon.png') no-repeat center;
+    margin-right: 8px;
+}
+
+.nav-login .login-text {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.nav-bottom {
+    background-color: #1C2526;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+    background-size: 20px 20px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 15px;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a.active {
+    border: 2px solid white;
+}
+
+.nav-links a:hover {
+    transform: scale(1.1);
+    border: 2px solid #FF0000;
+    color: #FF0000;
+}
+
+.reduced-motion {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reduced-motion label {
+    margin-right: 8px;
+}
+
+.nav-switch img.switch-logo {
+    height: 40px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about-section {
+    padding: 50px;
+    background-image: url("https://i.pinimg.com/736x/2e/46/fb/2e46fb132f568986e285f43c108018ab.jpg");
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    color: #ff5733;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease-in-out;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    max-width: 350px;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.feature img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    color: #da0303;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #CC6600;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+

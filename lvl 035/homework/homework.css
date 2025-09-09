@@ -1,0 +1,18 @@
+#link {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+#link:hover {
+    text-decoration: underline;
+    color: purple;
+    background-color: yellow;
+}
+
+#link:visited {
+    color: green;
+}
+

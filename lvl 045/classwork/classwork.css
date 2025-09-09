@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.header, .footer {
+    background: skyblue;
+    padding: 20px;
+    text-align: center;
+}
+.main {
+    display: flex;
+    flex: 1;
+}
+.menu {
+    background: pink;
+    width: 20%;
+    padding: 20px;
+}
+.content {
+    background: tan;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>3D iPhone 14 Project</title>
+    <link rel="stylesheet" href="test.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#head">Home</a></li>
+            <li><a href="#iphone">3D Model</a></li>
+            <li><a href="#info">Details</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <p id="head">IPHONE 14</p>
+
+    <!-- 3D Viewer -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
+    <spline-viewer 
+        url="https://prod.spline.design/FutF6tkD5qaCx5Lc/scene.splinecode" 
+        id="iphone" 
+        draggable="false">
+    </spline-viewer>
+
+    <!-- Info Section -->
+    <p id="info">
+        The iPhone 14, released by Apple in September 2022, builds on the foundation of its predecessor while introducing thoughtful upgrades in performance and safety. Retaining the familiar 6.1-inch Super Retina XDR display, the iPhone 14 maintains the sleek and durable design Apple is known for, with an aerospace-grade aluminum body and Ceramic Shield front for added toughness.
+
+Powered by the A15 Bionic chip with a 5-core GPU—originally seen in the iPhone 13 Pro—the device delivers impressive speed and graphics performance. It features a dual 12-megapixel camera system enhanced by the Photonic Engine, improving low-light photography and color accuracy. New features like Action Mode for stabilized video and Cinematic Mode in 4K add creative flexibility for content creators.
+
+Beyond hardware, the iPhone 14 introduces important safety technologies. Crash Detection can automatically alert emergency services after a severe car accident, and Emergency SOS via satellite allows users to contact help even without cellular service—an innovation especially useful for outdoor adventurers.
+
+Available in a range of colors including Midnight, Starlight, Blue, Purple, Product(RED), and later Yellow, the iPhone 14 blends style with reliability. While it may not be a radical departure from previous models, its focus on refined performance, improved camera capabilities, and life-saving safety features make it a compelling choice for iPhone users seeking a dependable and advanced smartphone.
+    </p>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="">info@iphoneproject.com</a></p>
+        <p>Phone number: <a href="">123 456 78</a></p>
+    </div>
+
+</body>
+</html>
+
