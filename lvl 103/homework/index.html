@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #start-screen, #game-screen {
+      display: none;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    input[type="color"] {
+      padding: 5px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="start-screen" class="container">
+    <h1>Welcome to the Number Guessing Game!</h1>
+    <label for="playerName">Enter your name:</label>
+    <input type="text" id="playerName" placeholder="Your name">
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <div id="game-screen" class="container">
+    <h1 id="greetingMessage">Welcome!</h1>
+    <p>Your score: <span id="scoreDisplay">0</span></p>
+    <label for="colorPicker">Choose background color:</label>
+    <input type="color" id="colorPicker" onchange="changeBackgroundColor()">
+    <p>Guess the number:</p>
+    <span id="randomNumberDisplay">0</span>
+    <input type="number" id="guessInput" placeholder="Enter your guess">
+    <button onclick="checkGuess()">Check Guess</button>
+    <p id="errorMessage"></p>
+  </div>
+
+  <script>
+    let playerName = '';
+    let playerScore = 0;
+    let randomNumber = 0;
+    let difficulty = 2;
+
+    if (localStorage.getItem('playerName')) {
+      playerName = localStorage.getItem('playerName');
+      document.getElementById('start-screen').style.display = 'none';
+      document.getElementById('game-screen').style.display = 'block';
+      initializeGame();
+    }
+
+    function startGame() {
+      if (!playerName) {
+        playerName = document.getElementById('playerName').value;
+        localStorage.setItem('playerName', playerName);
+        document.getElementById('greetingMessage').textContent = `Welcome ${playerName}!`;
+        document.getElementById('start-screen').style.display = 'none';
+        document.getElementById('game-screen').style.display = 'block';
+        initializeNewRound();
+      }
+    }
+
+    function initializeGame() {
+      document.getElementById('greetingMessage').textContent = `Welcome back ${playerName}!`;
+      initializeNewRound();
+    }
+
+    function initializeNewRound() {
+      randomNumber = generateRandomNumber();
+      document.getElementById('randomNumberDisplay').textContent = randomNumber;
+      document.getElementById('guessInput').value = '';
+      document.getElementById('errorMessage').textContent = '';
+    }
+
+    function generateRandomNumber() {
+      return Math.floor(Math.random() * difficulty);
+    }
+
+    function checkGuess() {
+      const userGuess = parseInt(document.getElementById('guessInput').value);
+      if (userGuess === randomNumber) {
+        playerScore++;
+        document.getElementById('scoreDisplay').textContent = playerScore;
+        difficulty *= 2; 
+        initializeNewRound();
+      } else {
+        document.getElementById('errorMessage').textContent = 'Wrong answer, try again!';
+      }
+    }
+
+    function changeBackgroundColor() {
+      const selectedColor = document.getElementById('colorPicker').value;
+      document.body.style.backgroundColor = selectedColor;
+    }
+  </script>
+</body>
+</html>

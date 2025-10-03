@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.main-container {
+    margin-bottom: 20px;
+}
+
+.counter {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto;
+    width: 300px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.counter .value {
+    font-size: 2em;
+    margin: 10px;
+}
+
+button, input[type="checkbox"] {
+    margin: 5px;
+}

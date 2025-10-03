@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design with Filters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 16px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+
+        .card-rating {
+            font-size: 1em;
+            color: #ff5722;
+            font-weight: bold;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .controls button {
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .controls button:hover {
+            background: #0056b3;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Card Design</h1>
+    <div class="controls">
+        <button id="filter">Filter Below Average</button>
+        <button id="sort-asc">Sort by Increasing Rating</button>
+        <button id="sort-desc">Sort by Decreasing Rating</button>
+        <button id="sort-random">Sort Randomly</button>
+    </div>
+
+    <div class="container" id="card-container">
+    
+    </div>
+
+
+    <script src="script.js"></script>
+    </body>
+</html>

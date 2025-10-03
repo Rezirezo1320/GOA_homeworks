@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    input {
+      padding: 10px;
+      width: 80%;
+      margin-bottom: 10px;
+    }
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ID Generator and Checker</h1>
+    <button id="generateBtn">Generate ID</button>
+    <p>Generated IDs:</p>
+    <ul id="idList"></ul>
+
+    <hr>
+    <input type="text" id="checkInput" placeholder="Enter ID to check">
+    <button id="checkBtn">Check ID</button>
+    <div id="output"></div>
+  </div>
+
+  <script>
+    const idStorage = [];
+
+    function generateRandomID() {
+      return 'ID-' + Math.random().toString(36).substring(2, 10).toUpperCase();
+    }
+
+    document.getElementById('generateBtn').addEventListener('click', () => {
+      const newID = generateRandomID();
+      idStorage.push(newID);
+
+      const idList = document.getElementById('idList');
+      const listItem = document.createElement('li');
+      listItem.textContent = `${newID} : ${idStorage.length - 1}`;
+      idList.appendChild(listItem);
+    });
+
+ 
+    document.getElementById('checkBtn').addEventListener('click', () => {
+      const inputID = document.getElementById('checkInput').value.trim();
+      const output = document.getElementById('output');
+
+      if (!inputID) {
+        output.textContent = 'Please enter an ID to check.';
+        output.style.color = 'red';
+        return;
+      }
+
+      const index = idStorage.indexOf(inputID);
+      if (index !== -1) {
+        output.textContent = `ID "${inputID}" exists at index ${index}.`;
+        output.style.color = 'green';
+      } else {
+        output.textContent = `ID "${inputID}" does not exist.`;
+        output.style.color = 'red';
+      }
+    });
+  </script>
+</body>
+</html>

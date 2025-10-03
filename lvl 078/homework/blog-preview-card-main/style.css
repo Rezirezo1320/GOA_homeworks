@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    padding: 5rem 1rem;
+    font-family:Figtree ;
+    font-weight: 500;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 0px black;
+    max-width: 350px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.text-content .tag {
+    background-color: hsl(47, 88%, 63%);
+    display: inline-block;
+    font-size: 1rem;
+    padding: 3px 8px;
+    margin: 1.5rem 0 1rem;
+    border-radius: 3px;
+    color: black;
+    font-weight: bold;
+}
+
+.text-content .published-at {
+    color: black;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.text-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 800;
+}
+
+.text-content .description {
+    font-size: 1rem;
+    color: hsl(0, 0%, 42%);
+    margin-bottom: 1.5rem;
+    
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.author span {
+    font-size: 0.9rem;
+    color: black;
+    font-weight:500;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+} 

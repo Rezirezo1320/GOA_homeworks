@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+        .valid {
+            background-color: lightgreen;
+        }
+        .invalid {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form id="registration" onsubmit="return validateForm()">
+        <label for="name">Full Name:</label>
+        <input id="name" type="text" onkeyup="validateName()" onblur="validateName()">
+        <p id="nameError" class="error"></p>
+        <br>
+        
+        <label for="email">Email:</label>
+        <input id="email" type="text" onkeyup="validateEmail()" onblur="validateEmail()">
+        <p id="emailError" class="error"></p>
+        <br>
+        
+        <label for="password">Password:</label>
+        <input id="password" type="password" onkeyup="validatePassword()" onblur="validatePassword()">
+        <p id="passwordError" class="error"></p>
+        <br>
+        
+        <label for="passwordRepeat">Repeat Password:</label>
+        <input id="passwordRepeat" type="password" onkeyup="validateRepeatPassword()" onblur="validateRepeatPassword()">
+        <p id="passwordRepeatError" class="error"></p>
+        <br>
+        
+        <label for="age">Age:</label>
+        <input id="age" type="number" onkeyup="validateAge()" onblur="validateAge()">
+        <p id="ageError" class="error"></p>
+        <br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    <p id="errorMessage" class="error"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

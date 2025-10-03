@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Emails</title>
+</head>
+<body>
+  <h1>ფილტრაცია წერილების მიხედვით</h1>
+
+
+  <div>
+    <label for="subjectFilter">შეიყვანეთ სასურველი თემა:</label>
+    <input type="text" id="subjectFilter" placeholder="მაგ: მოგზაურობა" />
+    <button onclick="filterEmails()">ფილტრი</button>
+  </div>
+
+  <hr>
+
+
+  <div>
+    <h2>შერჩეული წერილები</h2>
+    <ul id="emailList">
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
