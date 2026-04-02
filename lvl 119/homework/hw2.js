@@ -1,5 +1,0 @@
-let names = new Set(["Davit", "Nino", "Davit", "Saba", "Nino"])
-
-names = new Set(names)
-
-console.log(names)
