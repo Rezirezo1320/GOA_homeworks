@@ -1,0 +1,9 @@
+body {
+    width: 1900px;
+    transform: translate();
+    overflow: hidden;
+    background-image: url("https://images.vector-images.com/clp5/236997/clp4018761.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

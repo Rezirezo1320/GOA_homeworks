@@ -1,0 +1,21 @@
+#div1 {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    transition: width 2s, height 2s, transform 4s, background-color 2s;
+    transition-timing-function: ease;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+}
+
+#div1:hover {
+    transform: rotate(2880deg);
+    width: 800px;
+    height: 800px;
+    background-color: blue;
+}

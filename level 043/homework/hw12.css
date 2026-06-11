@@ -1,0 +1,21 @@
+input {
+    width: 500px;
+    height: 250px;
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    font-size: 100px;
+    cursor: pointer;
+    transition: 1s;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+    background-color: red;
+}
+input:hover {
+    background-color: blueviolet;
+}

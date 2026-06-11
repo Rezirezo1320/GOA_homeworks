@@ -1,0 +1,127 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#141414;
+    font-family: sans-serif;
+}
+
+#div1 {
+    width: 300px;
+    height: 600px;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+
+#but1 {
+    width: 90%;
+    background-color: #333333;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+#but2 {
+    width: 90%;
+    background-color: #333333;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+#but3 {
+    width: 90%;
+    background-color: #333333;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+#but4 {
+    width: 90%;
+    background-color: #333333;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+#but5 {
+    width: 90%;
+    background-color: #333333;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+#but1 p {
+    color: white;
+;
+}
+
+#but2 p {
+    color: white;
+}
+
+#but3 p {
+    color: white;
+}
+
+#but4 p {
+    color: white;
+}
+
+#but5 p {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+#p1 {
+    color: #cae363;
+    position: relative;
+    bottom: 10px;
+}
+
+#p2 {
+    color: white;
+}
+
+#but1:hover {
+    background-color: #637a1b;
+}
+
+#but2:hover {
+    background-color: #637a1b;
+}
+
+#but3:hover {
+    background-color: #637a1b;
+}
+
+#but4:hover {
+    background-color: #637a1b;
+}
+
+#but5:hover {
+    background-color: #637a1b;
+}

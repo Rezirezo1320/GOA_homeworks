@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+}
+
+h1 {
+    font-size: 100px;
+    color: red;
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change {
+    from {
+        color: blue;
+    }
+
+    to {
+        color: rgb(0, 245, 20);
+    }
+}

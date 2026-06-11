@@ -1,0 +1,13 @@
+#p1 {
+    font-size: 100px;
+    color: black;
+    text-decoration: underline wavy green 5px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.35978vh;
+    background-color: purple;
+}

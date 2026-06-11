@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap');
+* {
+    font-family: "Playwrite VN", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#div2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#ul1 {
+    font-size: 32px;
+}
+
+#div3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#ul2 {
+    font-size: 32px;
+}
+
+body {
+    background-color: blueviolet;
+}

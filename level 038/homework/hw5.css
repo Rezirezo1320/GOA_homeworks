@@ -1,0 +1,21 @@
+#div1 {
+    height: 1000px;
+    width: 1000px;
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.4vh;
+    background-color: black;
+}
+
+img {
+    width: 17.5%;
+    height: 17.5%;
+}

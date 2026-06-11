@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    background-color: rebeccapurple;
+}

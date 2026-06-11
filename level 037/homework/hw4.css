@@ -1,0 +1,19 @@
+#h1 {
+    color: red;
+    background-color: blue;
+    font-size: 100px;
+    font-family: cursive;
+    text-align: right;
+}
+
+.h2 {
+    color: magenta;
+    background-color: aqua;
+    font-size: 50px;
+    font-family: fantasy;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}

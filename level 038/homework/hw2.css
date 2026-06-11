@@ -1,0 +1,21 @@
+#div1 {
+    font-size: 500px;
+    width: 1000px;
+    height: 1000px;
+    background-color: red;
+}
+
+#div2 {
+    background-color: green;
+    width: 12.5%;
+    height: 12.5%;
+    font-size: 50%;
+}
+
+body {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+}

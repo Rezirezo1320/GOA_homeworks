@@ -1,0 +1,34 @@
+#div-main {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    height: 1800px;
+    background-color: blue;
+    grid-template-columns: 200px 300px 400px 500px;
+    grid-template-rows: 200px 300px 400px;
+    justify-items: center;
+    align-items: center;
+}
+
+#div-main div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#div-main2 {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    height: 1800px;
+    background-color: blue;
+    grid-template-rows: 200px 300px 400px;
+    justify-items: center;
+    align-items: center;
+}
+
+#div-main2 div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

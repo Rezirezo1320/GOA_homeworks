@@ -1,0 +1,52 @@
+h1 {
+    font-size: 70px;
+}
+
+#h1 {
+    text-align: right;
+    text-decoration: underline wavy green;
+}
+
+#h2 {
+    text-align: center;
+    text-decoration: line-through black 8px;
+}
+
+#h3 {
+    text-decoration: overline red 20px;
+}
+
+#h4 {
+    text-align: center;
+    text-decoration: underline black 8px;
+}
+
+#h5 {
+    text-align: right;
+    text-decoration: line-through green 4px;
+}
+
+#h6 {
+    text-decoration: line-through black 7px;
+}
+
+#h7 {
+    text-decoration: overline black 5px;
+}
+
+#h8 {
+    text-align: right;
+    color: green;
+    text-decoration:overline green 5px;
+}
+
+#h9 {
+    text-align: center;
+    color: gray;
+    text-decoration: overline gray 5px;
+}
+
+#h10 {
+    text-align: right;
+    text-decoration: underline wavy green 5px;
+}

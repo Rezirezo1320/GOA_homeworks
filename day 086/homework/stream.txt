@@ -1,6 +1,0 @@
-stream - 0 და 1-იანების ნაკადად (ლოგიკურ მონაცემებად) გადაქცეული ელექტრონული სიგნალები.
-
-არსებობს 3 სახის stream:
-1. standard input
-2. standard output
-3. standard error

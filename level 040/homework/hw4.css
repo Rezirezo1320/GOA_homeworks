@@ -1,0 +1,49 @@
+body {
+    background-color: #043cd2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+    flex-direction: column;
+    font-size: 40px;
+}
+
+#p1 {
+    color: red;
+}
+
+#p2 {
+    color: coral;
+}
+
+#p3 {
+    color: rgb(226, 154, 168);
+}
+
+#p4 {
+    color: aqua;
+}
+
+#p5 {
+    color: lime;
+}
+
+#p6 {
+    color: darkkhaki;
+}
+
+#p7 {
+    color: yellow;
+}
+
+#p8 {
+    color: pink;
+}
+
+#p9 {
+    color: purple;
+}
+
+#p10 {
+    color: darkslategray;
+}

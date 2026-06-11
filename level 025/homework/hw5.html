@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-repeat: no-repeat;
+            background-size: 1950px 950px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgb(255, 255, 255);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            border: 1px solid black;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #b39804;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #b39804;
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            font-size: 14px;
+            border: 1px solid black;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #b39804;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 1s;
+        }
+        button:hover {
+            background-color: #b39804;
+        }
+        .forgot-password {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .forgot-password a {
+            text-decoration: none;
+            color: #b39804;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+        #div1 {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register on event!(hackatghon)</h2>
+        <form action="hw5.html">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="lastname">User last name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="number">Speed:</label>
+            <input type="number" id="number" name="age" required>
+
+            <label for="password">Gender:</label>
+            <div id="div1">
+                <p>Female</p><input type="radio" id="password" name="password" required>
+                <p>Male</p><input type="radio" id="password" name="password" required>
+            </div>
+            
+            <label for="number">Group:</label>
+            <input type="number" id="number" name="age" required>
+
+            <label for="password">Will you be a lider?:</label>
+            <div id="div1">
+                <p>Yes</p><input type="radio" id="password" name="password" required>
+                <p>No</p><input type="radio" id="password" name="password" required>
+            </div>
+
+            <label for="number">Age:</label>
+            <input type="number" id="number" name="age" required>
+
+            <button type="submit">Register In</button><br><br>
+        </form>
+        <div class="forgot-password">
+            <a href="#">Forgot your Group?</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 107vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+#div-main4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/bg.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#div-main4 h1 {
+    font-family: Sansation;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40.29px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+}
+
+#choice {
+    margin-top: 50px;
+    display: flex;
+    gap: 65px;
+    flex-wrap: wrap;
+}
+
+#sallon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#sallon1 {
+    width: 1180px;
+}
+
+#arrow, #arrow1 {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+}
+
+#car1 {
+    position: relative;
+    top: 180px;
+    height: 468px;
+}

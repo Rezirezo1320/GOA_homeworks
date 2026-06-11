@@ -1,0 +1,6 @@
+name = input("Enter Your name: ")
+surname = input("Enter Your surname: ")
+age = int(input("Enter Your age: "))
+school = int(input("Enter Your school number: "))
+grade = int(input('Enter your grade: '))
+print("me mqvia" + " " + name + " " + surname + " " + "var" + " " + str(age) + " " + "wlis" + " " + "vswavlob me" + " " + grade + " " + school) 

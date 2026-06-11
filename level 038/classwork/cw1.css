@@ -1,0 +1,32 @@
+#div1 {
+    width: 70%;
+    height: 70%;
+    background-color: black;
+    font-size: 50px;
+}
+
+#div2 {
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+    color: red;
+}
+
+#div2 p {
+    font-size: 50%;
+}
+
+body {
+    height: 98.3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:darkgoldenrod;
+}
+
+#div3 {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+}

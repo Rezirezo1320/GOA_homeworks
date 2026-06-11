@@ -1,0 +1,33 @@
+.button1 {
+    font-size: 100px;
+    background-color: black;
+    border: 2px solid yellowgreen;
+    border-radius: 15px;
+    color: aqua;
+}
+
+.button2 {
+    font-size: 50px;
+    background-color: blue;
+    color: red;
+    border-radius: 15px;
+    font-size: 50px;
+}
+
+.button3 {
+    font-size: 70px;
+    background-color: red;
+    color: green;
+    border-radius: 15px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+    justify-content: space-around;
+}
+button {
+    cursor: pointer;
+}

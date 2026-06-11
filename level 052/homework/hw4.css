@@ -1,0 +1,18 @@
+#div1 {
+    width: 800px;
+    height: 500px;
+    background-color: red;
+    transition: 1s;
+}
+
+#div1:hover {
+    transform: rotate(30deg);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+    background-color: black;
+}

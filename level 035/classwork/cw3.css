@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+    background-color: black;
+}
+
+h1 {
+    color: greenyellow;
+    font-size: 100px;
+    font-family: sans-serif;
+}

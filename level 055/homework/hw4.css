@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", serif;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c192c;
+    
+}
+
+
+section{
+    background-color: #15273f;
+    border-radius: 15px;
+    padding: 20px 20px;
+    width: 340px;
+    font-family: "Red Hat Display", serif;
+}
+
+img{
+    border-radius: 15px;
+    width: 300px;
+    
+}
+
+h1{
+    cursor: pointer;
+    padding:15px 0px;
+    color:hsl(0, 0%, 100%);
+}
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+p{
+    color: #fff;
+    opacity: 50%;
+}
+
+
+div{
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    
+}
+
+h2{
+    color:hsl(178, 100%, 50%);
+    font-size: 14px;
+    position: relative;
+    left: 5px;
+}
+
+h3{
+    color: #fff;
+    opacity: 60%;
+    font-size: 13px;
+    padding-left: 130px;
+    font-weight: 400;
+}
+
+.svg1{
+    position: relative;
+    left:125px;
+}
+
+
+
+h4{
+    color: gray;
+    padding-left: 15px;
+}
+
+b{
+    color: #fff;
+}
+
+b:hover{
+    color:hsl(178, 100%, 50%) ;
+    cursor: pointer;
+}
+
+.avatar{
+    width:30px;
+    border: 1px solid #fff;
+    
+}
+
+hr{
+    
+    opacity: 50%;
+}

@@ -1,0 +1,16 @@
+button {
+    font-size: 100px;
+    color: white;
+    background-color: rgb(34, 149, 202);
+    border-radius: 15px;
+    border: 1px solid rebeccapurple;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+    background-color: lightpink;
+}

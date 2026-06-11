@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hw1.css">
+</head>
+<body>
+    <div id="todo">
+        <div id="head">
+            <h1 id="title">Todo App</h1>
+            <form id="add-div">
+                <input type="text" id="input" required placeholder="Add your new todo" name="task" maxlength="20">
+                <button id="add" type="submit">+</button>
+            </form>
+        </div>
+        <div id="main">
+            <ul id="items">
+
+            </ul>
+        </div>
+        <div id="total">
+            <h1 id="total-h1">You have <span id="amount">0</span> peding tasks</h1>
+            <button id="clear">Clear All</button>
+        </div>
+    </div>
+    <div id="todo">
+        <div id="head">
+            <h1 id="title">Comleted Items</h1>
+        </div>
+        <div id="main-comp">
+            <ul id="items-comp">
+                
+            </ul>
+        </div>
+        <div id="total">
+            <h1 id="total-h1">You have <span id="amoun-comp">0</span> completed tasks</h1>
+        </div>
+    </div>
+    <script src="hw1.js"></script>
+</body>
+</html>

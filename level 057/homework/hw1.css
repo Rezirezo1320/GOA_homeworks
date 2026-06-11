@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #E0F2F1;
+    font-family: "Karla", serif;
+    margin: 0;
+    font-weight: 400, 700;
+}
+.card {
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.card-header {
+    padding: 20px;
+}
+.card-header h2 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 10px;
+}
+.card-header p {
+    color: hsl(71, 73%, 54%);
+    font-weight: bold;
+}
+.card-header .description {
+    color: hsl(218, 22%, 67%);
+    font-size: 14px;
+    margin-top: 10px;
+}
+.card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #009688;
+    color: white;
+}
+.left, .right {
+    padding: 20px;
+}
+.left {
+    background-color: #2bb3b1;
+    color: #e0f9fc;
+}
+.right {
+    background-color: #4abebd;
+}
+.left h3, .right h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.left .price {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.left .subtext {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.sign-up {
+    background: #bfdf32;
+    color: #edfc9e;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    cursor: pointer;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+#jess {
+    margin-left: 15px;
+}
+.right ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+.right ul li {
+    margin-bottom: 5px;
+}
+@media (max-width: 600px) {
+    .card-content {
+        grid-template-columns: 1fr;
+    }
+}

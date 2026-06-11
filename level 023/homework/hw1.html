@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #div1 {
+            width: 100%;
+            background-color: coral;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+
+        #ul1 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .li1 {
+            list-style-type: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #list1 {
+            color: rgb(243, 225, 201);
+        }
+    </style>
+</head>
+<body style="background-image: url(data:image/jpeg;base64,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); background-repeat: no-repeat; background-size: 2000px 1000px;">
+    <div id="div1">
+        <h1 id="h1">ფასანაურული ხინკალი</h1>
+        <ul id="ul1">
+            <a href="https://www.facebook.com/davit.narimanidze.90" style="text-decoration: none; color: white;"><li class="li1">ფასანაურული დავითი</li></a>
+            <a href="https://www.facebook.com/nika11keshelava" style="text-decoration: none; color: white;"><li class="li1">ფასანაურული ჩვენს შესახებ</li></a>
+            <a href="https://www.facebook.com/nika11keshelava" style="text-decoration: none; color: white;"><li class="li1">ფასანაურული კონტაქტები</li></a>
+            <a href="hw1.2.html" style="text-decoration: none; color: white;"><li class="li1" id="list1">ფასანაურული დარეგისტრირება</li></a>
+        </ul>
+    </div>
+    <h1 style="color: blue; text-align: center;">ფასანაურული ხინკალი</h1><br>
+    <h1 style="color: blue; text-align: center; font-size: 25px;">ხინკალი — ქართული ცომის გუფთა. შედგება ღორისა და საქონლის (ან ცხვრის) ხორცის ნარევისგან. წარმოადგენს<br>
+    ცომისგან დამზადებულ ერთგვარ ტომარას, რომელშიც მოთავსებულია გატარებული ხორცი. მზადდება ხარშვის წესით</h1><br><br><br>
+    <h1 style="color: blue; text-align: center;">ისნტორია</h1>
+    <h1 style="color: blue; text-align: center; font-size: 25px;">ხინკლის დამზადება სათავეს იღებს აღმოსავლეთ საქართველოს მთიან რეგიონებში. მისი გამოგონების პატივი მიეწერებათ როგორც მოხევეებს,<br>
+    ასევე ფშავლებს, მთიულებსა და ხევსურებს.[1] უძველესი წესით ხინკალი მზადდება მსხვილად დაკეპილი ხორცით. მთიან რაიონებში ასეთი<br>
+    მეთოდით ხინკალს დღემდე ამზადებენ.</h1>
+    <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Khinkali_551.jpg/250px-Khinkali_551.jpg" width="700px" height="500px"></center>
+</body>
+</html>

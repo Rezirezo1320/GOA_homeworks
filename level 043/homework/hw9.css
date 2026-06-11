@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(251, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 100px;
+    border-radius: 15px;
+    background-color: rgb(0, 255, 0);
+    box-shadow: 0px 0px 10px 10px rgb(240, 0, 92);
+}
+
+label {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+#surname {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+#submit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(111, 0, 255);
+    cursor: pointer;
+    transition: 1s;
+}
+
+#submit:hover {
+    background-color: rgb(247, 0, 255);
+}

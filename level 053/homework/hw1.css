@@ -1,0 +1,25 @@
+#div1 {
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    animation-name: okay;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+}
+
+@keyframes okay {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: blue;
+    }
+}

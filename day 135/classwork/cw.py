@@ -1,1 +1,0 @@
-# no classwork, we talked about combinatorics

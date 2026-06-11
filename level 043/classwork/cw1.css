@@ -1,0 +1,51 @@
+body {
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
+    align-items: center;
+    height: 98.3vh;
+    font-size: 20px;
+    gap: 20px;
+}
+
+#ul1 {
+    list-style-type: circle;
+}
+
+#ul2 {
+    list-style-type: decimal;
+}
+
+
+#ul3 {
+    list-style-type: decimal-leading-zero;
+}
+
+#ul4 {
+    list-style-type: disc;
+}
+
+#ul5 {
+    list-style-type: georgian;
+}
+
+#ul6 {
+    list-style-type: lower-alpha;
+}
+
+#ul7 {
+    list-style-type: lower-greek;
+}
+
+#ul8 {
+    list-style-type: lower-roman;
+}
+
+#ul9 {
+    list-style-type: none;
+}
+
+#ul10 {
+    list-style-type: square;
+}

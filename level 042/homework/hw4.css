@@ -1,0 +1,66 @@
+body {
+    background-color: #2133d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+    flex-direction: column;
+    font-size: 40px;
+    font-style: italic;
+    font-family: cursive;
+}
+
+#a1 {
+    color: red;
+    font-size: 30px;
+}
+
+#a2 {
+    color: coral;
+    font-size: 30px;
+}
+
+#a3 {
+    color: rgb(226, 154, 168);
+    font-size: 30px;
+}
+
+#a4 {
+    color: aqua;
+    font-size: 30px;
+}
+
+#a5 {
+    color: lime;
+    font-size: 30px;
+}
+
+#a6 {
+    color: darkkhaki;
+    font-size: 30px;
+}
+
+#a7 {
+    color: yellow;
+    font-size: 30px;
+}
+
+#a8 {
+    color: pink;
+    font-size: 30px;
+}
+
+#a9 {
+    color: purple;
+    font-size: 30px;
+}
+
+#a10 {
+    color: darkslategray;
+    font-size: 30px;
+}
+
+a:visited {
+    color: rgb(214, 85, 34);
+}
+

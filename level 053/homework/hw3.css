@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+}
+
+#div1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: rot;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rot {
+    from {
+        transform: rotate(360deg)
+    }
+
+    to {
+        background-color: yellow;
+    }
+}

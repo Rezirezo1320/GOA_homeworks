@@ -1,0 +1,13 @@
+#p1 {
+    color: red;
+    text-decoration: underline overline red 5px;
+    font-size: 100px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+    background-color: magenta;
+}

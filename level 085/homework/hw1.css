@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #2a314b;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fefdfe;
+    font-size: 100px;
+}
+
+div {
+    color: #d00261;
+}
+
+.key {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 6px solid #3b415a;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+    margin-top: 100px;
+}
+
+#keys {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+#w {
+    background-image: url("assets/dum1.png");
+    background-size: cover;
+}
+
+#a {
+    background-image: url("assets/dum2.png");
+    background-size: cover;
+}
+
+#s {
+    background-image: url("assets/dum3.png");
+    background-size: cover;
+}
+
+#d {
+    background-image: url("assets/dum4.png");
+    background-size: cover;
+}
+
+#j {
+    background-image: url("assets/dum5.png");
+    background-size: cover;
+}
+
+#k {
+    background-image: url("assets/dum6.png");
+    background-size: cover;
+}
+
+#l {
+    background-image: url("assets/dum7.png");
+    background-size: cover;
+}
+
+p {
+    text-shadow: 2px 2px white;
+}
+
+#prem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: gold;
+    padding: 50px;
+    border: 5px solid green;
+    cursor: pointer;
+}

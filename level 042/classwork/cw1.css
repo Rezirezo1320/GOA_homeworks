@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+}
+
+button {
+    font-size: 100px;
+    width: 500px;
+    height: 200px;
+    color: red;
+    background-color: green;
+    border: 1px solid blue;
+    transition: 1s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    font-size: 120px;
+    width: 600px;
+    height: 300px;
+    color: purple;
+    background-color: red;
+    border: 10px solid magenta;
+}

@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+    background-color: chartreuse;
+    justify-content: space-around;
+}
+
+p {
+    font-size: 40px;
+}
+
+#p1 {
+    color: red;
+    text-decoration: underline wavy;
+}
+
+#p2 {
+    color: blue;
+    text-decoration: line-through;
+}
+
+#p3 {
+    color: burlywood;
+    text-decoration: overline;
+}
+
+#p4 {
+    color: blueviolet;
+    text-decoration: line-through dotted;
+}
+
+#p5 {
+    text-decoration: overline solid;
+}
+
+#p6 {
+    text-decoration: underline dashed;
+}

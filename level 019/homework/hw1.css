@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 16px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 19px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 32px;
+}
+
+main {
+    padding: 32px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 16px;
+}
+
+form input, form textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 11.2px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+
+.portfolio-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 19px;
+    margin: 19px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button1 {
+    font-size: 45px;
+    color: #333;
+    background-color: blanchedalmond;
+    border: none;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#div1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button1:hover {
+    color: black;
+    background-color: white;
+}

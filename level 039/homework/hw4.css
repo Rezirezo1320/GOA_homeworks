@@ -1,0 +1,14 @@
+#p1 {
+    color: blue;
+    text-decoration: line-through dashed blue;
+    font-size: 100px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.3vh;
+    background-color: black;
+    transform-origin: top, right;
+}
